@@ -1,0 +1,305 @@
+<!index.html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemBoys8</title>
+    <style>
+        body {
+            font-family: Alegreya;
+            margin: 0;
+            padding: 0;
+            background-color: #0077c2;
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: white;
+            text-align: center;
+        }
+
+        a { color: #09a8e1; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .navbar {
+            background-color: #003366;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .navbar a:hover {
+            background-color: #09a8e1;
+            color: black;
+        }
+
+        .section {
+            padding: 120px 20px 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .main-title { font-size: 50px; margin-bottom: 20px; }
+        .head { font-size: 40px; margin-bottom: 10px; }
+        .text { font-size: 18px; margin-bottom: 20px; line-height: 1.6; }
+        .container { max-width: 900px; margin: auto; }
+
+        .expandable-card, .full-width-expandable {
+            background-color: #e0f7ff;
+            color: #003366;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            text-align: left;
+            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .more-text, .full-width-content { display: none; margin-top: 10px; color: #003366; }
+        .more-text.show, .full-width-content.show { display: block; }
+
+        .read-more-btn {
+            cursor: pointer;
+            background-color: #003366;
+            color: #09a8e1;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        video { 
+            display: block; 
+            margin: 20px auto; 
+            max-width: 100%; 
+            border: 3px solid white; 
+            border-radius: 8px;
+        }
+
+        .copyright { font-size: 20px; margin-top: 30px; }
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#home">Home/Intro</a>
+        <a href="#about">Our Core Values</a>
+        <a href="#how">Innovation Project</a>
+        <a href="#robot">Robot Game/Strategy</a>
+        <a href="#interviews">Interviews</a>
+        <a href="#facts">Our Mentors</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="container">
+
+        <!-- Home Section -->
+        <div id="home" class="section">
+            <div class="main-title">DemBoys8's Robot Game, Innovation Project, and Core Values</div>
+            <div class="text">Welcome to our FLL team webpage. Explore our projects, strategies, and values below!</div>
+       
+ </div>
+
+        <!-- Core Values Section -->
+        <div id="about" class="section">
+            <div class="head">Our Core Values:</div>
+            <div class="text">We will show how our team demonstrates each core value.</div>
+
+            <div class="expandable-card">
+                <b>Discovery!</b>
+                <span class="more-text">We explore new ideas and test different solutions in our projects.</span>
+                <button class="read-more-btn">Read More</button>
+            </div>
+
+            <div class="expandable-card">
+                <b>Innovation!</b>
+                <span class="more-text">We design creative solutions, like ASCAS, to solve real-world problems.</span>
+                <button class="read-more-btn">Read More</button>
+            </div>
+
+            <div class="expandable-card">
+                <b>Impact!</b>
+                <span class="more-text">We aim to make a meaningful difference in our competitions and community.</span>
+                <button class="read-more-btn">Read More</button>
+            </div>
+
+            <div class="expandable-card">
+                <b>Inclusion!</b>
+                <span class="more-text">Everyone’s ideas are valued and all team members contribute equally.</span>
+                <button class="read-more-btn">Read More</button>
+            </div>
+
+            <div class="expandable-card">
+                <b>Teamwork!</b>
+                <span class="more-text">We collaborate to build, code, and present our projects successfully.</span>
+                <button class="read-more-btn">Read More</button>
+            </div>
+
+            <div class="expandable-card">
+                <b>Fun!</b>
+                <span class="more-text">We enjoy robotics, support each other, and celebrate our achievements.</span>
+                <button class="read-more-btn">Read More</button>
+            </div>
+        </div>
+
+        <!-- Innovation Project Section -->
+        <div id="how" class="section">
+            <div class="head">Our Innovation Project:</div>
+            <div class="text">Learn about ASCAS, our portable artifact preservation system.</div>
+
+            <video controls>
+                <source src="assets/videos/project_demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="full-width-expandable" onclick="toggleFullWidth(this)">
+                <b>Details About ASCAS</b>
+                <div class="full-width-content">
+                    <p>Our Innovation Project, ASCAS — Artifact Storage, Care, and Security — is designed to solve a critical problem archaeologists face: fragile artifacts that are easily damaged or stolen before they reach a lab or museum. Through extensive research from historical societies, preservation journals, and expert guidance, we discovered that many artifacts are harmed by exposure to air, water, and sunlight. ASCAS provides a portable, solar-powered system that protects these valuable items immediately upon discovery, combining safety, portability, and practicality.</p>
+
+                    <p>ASCAS works by using soft, sturdy drawers to hold artifacts, a gas chamber that releases a precise mix of argon and nitrogen to slow decay, and security features such as facial recognition and a built-in alarm. Each artifact placed inside is automatically identified, and the system adjusts conditions to ensure it is preserved as effectively as possible. This innovative approach allows archaeologists to safeguard items on-site, rather than waiting until they reach a lab, which drastically reduces the risk of damage or loss.</p>
+
+                    <p>Building ASCAS taught our team about design, coding, and teamwork. We constructed the cabinet from plywood, added custom drawers, and integrated electronics using Raspberry Pi and Arduino systems. Through trial, error, and expert feedback, we learned how to refine both the physical and technical aspects of our system. This hands-on experience not only strengthened our technical skills but also emphasized the importance of collaboration and creativity in solving real-world problems.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Robot Game Section -->
+        <div id="robot" class="section">
+            <div class="head">Robot Game/Strategy:</div>
+            <div class="text">Short version of our strategy and missions.</div>
+
+            <video controls>
+                <source src="assets/videos/WIN_20251112_15_21_31_Pro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="full-width-expandable" onclick="toggleFullWidth(this)">
+                <b>More in-depth Explanation of Your Robot</b>
+                <div class="full-width-content">
+                    <p>Our robot is designed for efficiency, precision, and reliability, with five customized attachments that each handle specific missions. Some attachments can even tackle multiple missions, maximizing our point potential. Using a gear-and-axle motor system, each attachment moves with precise control. We carefully tested different mission sequences to find the most effective order, allowing the robot to recover even if one mission didn’t go perfectly. This approach ensured a consistent, high-scoring strategy throughout the competition.</p>
+
+                    <p>The design process and programming emphasized stability, simplicity, and repeatability. We used PyBricks, combining block and text coding, loops, sensor-based controls, and retry sequences to make the robot run accurately every time. Features like gyro sensors and balanced chassis design reduce drift, while versatile attachments save time and space. Through continuous testing, adjustments, and teamwork, we refined both the robot and our collaboration skills, learning the importance of iteration, problem-solving, and persistence.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interviews Section -->
+        <div id="interviews" class="section">
+            <div class="head">Interviews:</div>
+
+            <div class="expandable-card" onclick="toggleFullWidth(this)">
+                <b>Interview — Luca</b>
+                <div class="full-width-content">
+                    <p><b>Question:</b> What core value do you think your team demonstrates best?</p>
+                    <p><b>Luca:</b> Our strongest value is Teamwork. We help each other with coding, building, and testing, and everyone contributes.</p>
+                </div>
+            </div>
+
+            <div class="expandable-card" onclick="toggleFullWidth(this)">
+                <b>Interview — Rowan</b>
+                <div class="full-width-content">
+                    <p><b>Question:</b> What part of the Innovation Project are you most proud of?</p>
+                    <p><b>Rowan:</b> I’m proud of developing a solution archaeologists could actually use. The gas chamber and facial-recognition ideas were exciting to create.</p>
+                </div>
+            </div>
+
+            <div class="expandable-card" onclick="toggleFullWidth(this)">
+                <b>Interview — Charlie</b>
+                <div class="full-width-content">
+                    <p><b>Question:</b> What was the hardest part of the Robot Game this season?</p>
+                    <p><b>Charlie:</b> Making every run consistent was tough. Even tiny mistakes change everything, so we worked until our attachments were reliable.</p>
+                </div>
+            </div>
+
+            <div class="expandable-card" onclick="toggleFullWidth(this)">
+                <b>Interview — Matteo</b>
+                <div class="full-width-content">
+                    <p><b>Question:</b> What did you learn this year that surprised you?</p>
+                    <p><b>Matteo:</b> I learned how important programming accuracy is. Small changes in loops and gyro settings made our robot more consistent.</p>
+                </div>
+            </div>
+
+            <div class="expandable-card" onclick="toggleFullWidth(this)">
+                <b>Interview — Leo</b>
+                <div class="full-width-content">
+                    <p><b>Question:</b> What was the most fun part of being on the team?</p>
+                    <p><b>Leo:</b> The best part was celebrating when something finally worked after many tests. It made all the effort worth it.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mentors Section -->
+        <div id="facts" class="section">
+            <div class="head">Our Amazing Mentors:</div>
+
+            <div class="expandable-card" onclick="toggleFullWidth(this)">
+                <b>Mrs. Sutherland</b>
+                <div class="full-width-content">
+                    <p>Mrs. Sutherland is our school’s science teacher and an incredible supporter of our team. She keeps us focused, organized, and always pushes us to do our best.</p>
+                </div>
+            </div>
+
+            <div class="expandable-card" onclick="toggleFullWidth(this)">
+                <b>Alex</b>
+                <div class="full-width-content">
+                    <p>Alex helps guide us through the Innovation Project, giving feedback that makes our ideas stronger and more realistic. His creativity and advice shaped many of ASCAS’s best features.</p>
+                </div>
+            </div>
+
+            <div class="expandable-card" onclick="toggleFullWidth(this)">
+                <b>Nathan</b>
+                <div class="full-width-content">
+                    <p>Nathan is a huge help with our programming, teaching us how to improve accuracy and consistency. Thanks to him, we learned how to debug and refine our robot code effectively.</p>
+                </div>
+            </div>
+
+            <div class="copyright">Webpage Made By Team DemBoys8!</div>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact" class="section">
+            <div class="head">Contact Us</div>
+            <div class="text">If you have questions or want to reach out, email us at:</div>
+            <div class="text"><a href="mailto:lucalakatos@stjudeschool.org">lucalakatos@stjudeschool.org</a></div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const readMoreBtns = document.querySelectorAll('.read-more-btn');
+            readMoreBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const moreText = btn.previousElementSibling;
+                    moreText.classList.toggle('show');
+                    btn.textContent = moreText.classList.contains('show') ? 'Read Less' : 'Read More';
+                });
+            });
+        });
+
+        function toggleFullWidth(element){
+            const content = element.querySelector('.full-width-content');
+            content.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
